@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="420" viewBox="0 0 1400 420">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070B14"/><stop offset="100%" stop-color="#0E2740"/>
+    </linearGradient>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1A2A40" stroke-width="0.6" opacity="0.55"/>
+    </pattern>
+  </defs>
+  <rect width="1400" height="420" fill="url(#bg)"/><rect width="1400" height="420" fill="url(#g)"/>
+  <text x="700" y="175" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="64" font-weight="700" letter-spacing="6" fill="#F4F7FB">NAGA CODEX</text>
+  <text x="700" y="235" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="28" font-weight="600" letter-spacing="8" fill="#6BA3C7">REAL ENGINEERS</text>
+  <line x1="480" y1="265" x2="920" y2="265" stroke="#3A5570" stroke-width="1"/>
+  <text x="700" y="305" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="16" fill="#8A9BB0">Align · TDD · Verify · Ship  ·  8 agent skills</text>
+</svg>

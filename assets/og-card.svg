@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <rect width="1280" height="640" fill="#081018"/>
+  <text x="520" y="250" font-family="Inter,system-ui,sans-serif" font-size="72" font-weight="700" fill="#F4F7FB">Naga Codex</text>
+  <text x="520" y="320" font-family="Inter,system-ui,sans-serif" font-size="42" font-weight="600" fill="#6BA3C7">Real Engineers</text>
+  <line x1="520" y1="355" x2="1080" y2="355" stroke="#3A5570" stroke-width="1.5"/>
+  <text x="520" y="410" font-family="Inter,system-ui,sans-serif" font-size="24" fill="#A8B8C8">8 skills for disciplined agent engineering</text>
+  <text x="520" y="460" font-family="Inter,system-ui,sans-serif" font-size="18" letter-spacing="2" fill="#7A90A8">ALIGN · CONTEXT · TDD · REVIEW · VERIFY · SHIP</text>
+  <text x="1120" y="600" text-anchor="end" font-family="Inter,system-ui,sans-serif" font-size="16" fill="#5A7088">nagacodex.cloud</text>
+</svg>
