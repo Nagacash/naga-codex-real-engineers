@@ -6,7 +6,7 @@ description: >
 license: MIT
 metadata:
   author: naga-codex
-  version: "1.0.0"
+  version: "1.1.0"
   domain: engineering
   tier: "A"
 ---
@@ -59,6 +59,13 @@ Agent-facing guardrails for this repo.
 3. Write short definitions (1–2 lines)
 4. Add invariants that affect implementation
 5. Keep the file short enough to load every session
+
+## Progressive loading (for agents)
+Load only what the task needs, in order:
+1. CONTEXT.md glossary + invariants
+2. Seams/modules touched by the task
+3. One similar implementation as pattern reference
+Do not dump the whole monorepo into context.
 
 ## Rules
 - Prefer project truth over generic industry definitions

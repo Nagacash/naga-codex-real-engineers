@@ -7,7 +7,7 @@ description: >
 license: MIT
 metadata:
   author: naga-codex
-  version: "1.0.0"
+  version: "1.1.0"
   domain: engineering
   tier: "A"
 ---
@@ -30,6 +30,8 @@ Small, composable discipline — not a process takeover. User stays in control.
 | New feature/fix with testable behavior | `naga-tdd` |
 | PR/diff quality check | `naga-review` |
 | Multi-step delivery from idea → done | `naga-ship` |
+| Just generated code / "is this good?" | `naga-verify` |
+| Bug or slowness, need root cause | `naga-debug` |
 | Security audit / AppSec / GDPR | hand off to **Naga Codex Cyber Security** pack |
 
 ## Output

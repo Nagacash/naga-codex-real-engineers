@@ -4,16 +4,16 @@
 _Pack name: Naga Codex Agent Engineering (Tier A)_
 
 
-**Tier A** — small, original agent skills for real engineering discipline.  
+**Tier A+** — small, original agent skills for real engineering discipline.  
 Align · Context · TDD · Dual-axis review · Ship  
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Tier](https://img.shields.io/badge/Tier-A%20(6%20skills)-0B3D5C.svg)](docs/why-tier-a.md)
+[![Tier](https://img.shields.io/badge/Tier-A%20(8%20skills)-0B3D5C.svg)](docs/why-tier-a.md)
 [![Hermes](https://img.shields.io/badge/Hermes-naga--codex--eng-green.svg)](examples/README.md)
 
 > Not vibe coding. Not a process cult. Composable skills you control.
 
-## Skills (6)
+## Skills (8)
 
 | Skill | Invoke when |
 |-------|-------------|
@@ -23,6 +23,8 @@ Align · Context · TDD · Dual-axis review · Ship
 | [`naga-tdd`](skills/naga-tdd/) | Red → green → refactor one slice |
 | [`naga-review`](skills/naga-review/) | PR/diff: Standards ∥ Spec |
 | [`naga-ship`](skills/naga-ship/) | Orchestrate idea → done |
+| [`naga-verify`](skills/naga-verify/) | L1/L2/L3 quality gate after generation |
+| [`naga-debug`](skills/naga-debug/) | Hypothesis-driven bug/perf diagnosis |
 
 ## Install
 
@@ -50,7 +52,7 @@ Typical combo: `naga-align` on engagement scope → cyber `full-security-audit`.
 ## Inspiration (not a fork)
 
 Failure-mode framing is common in modern agent-engineering practice (including
-ideas discussed around mattpocock/skills, MIT). **All skill text here is original
+ideas discussed around mattpocock/skills and quality-gate patterns from the vibe-coding-playbook tradition, MIT where applicable). **All skill text here is original
 Naga Codex.** See [NOTICE](NOTICE).
 
 ## Naga Codex

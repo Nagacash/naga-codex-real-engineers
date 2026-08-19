@@ -6,7 +6,7 @@ description: >
 license: MIT
 metadata:
   author: naga-codex
-  version: "1.0.0"
+  version: "1.1.0"
   domain: engineering
   tier: "A"
 ---
@@ -21,6 +21,10 @@ was clear; the build proves it was not.
 - Before non-trivial implementation
 - After a vague "make it better" / "add X"
 - Before `naga-ship` or large refactors
+
+## Posture
+Treat the coding agent as a **strong junior under protocols**: it proposes and
+questions; it does not freestyle architecture past the alignment brief.
 
 ## Rules
 1. **Do not write production code** until the exit criteria below are met (spikes OK if labeled throwaway).

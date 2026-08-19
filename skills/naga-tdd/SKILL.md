@@ -6,7 +6,7 @@ description: >
 license: MIT
 metadata:
   author: naga-codex
-  version: "1.0.0"
+  version: "1.1.0"
   domain: engineering
   tier: "A"
 ---
@@ -45,6 +45,9 @@ Agents spray code, then hunt for tests. Feedback arrives too late; entropy wins.
 **Green proof:** command + pass
 **Refactor notes:** …
 ```
+
+## After green
+Optional: run `naga-verify` L1 on the slice before the next ticket.
 
 ## Out of scope
 - Full coverage ideology

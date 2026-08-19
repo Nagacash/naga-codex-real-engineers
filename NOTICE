@@ -4,7 +4,8 @@ Naga Codex Agent Engineering — Attribution
 Original Naga Codex work (MIT). Tier-A mini pack for disciplined agent engineering.
 
 Inspired by failure-mode patterns discussed in the broader agent-skills ecosystem,
-including ideas popularized in mattpocock/skills (MIT) — grilling for alignment,
+including ideas popularized in mattpocock/skills (MIT) and
+quality-gate / plan-first patterns discussed in RiyaParikh0112/vibe-coding-playbook — grilling for alignment,
 red-green-refactor loops, and separating standards review from spec review.
 
 No third-party skill bodies were copied. All SKILL.md text, Naga naming, install

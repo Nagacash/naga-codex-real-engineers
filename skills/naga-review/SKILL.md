@@ -6,7 +6,7 @@ description: >
 license: MIT
 metadata:
   author: naga-codex
-  version: "1.0.0"
+  version: "1.1.0"
   domain: engineering
   tier: "A"
 ---
@@ -26,6 +26,11 @@ do both badly.
 - Diff range or files
 - Spec / alignment brief / ticket text (if any)
 - Repo standards (linters, CONTEXT.md, ADRs)
+
+## Relationship to `naga-verify`
+- **Verify** = gate loop right after generation (L1 tools, L2 behavior, L3 flags)
+- **Review** = PR narrative on the full diff (Standards ∥ Spec)
+Run verify first when the change is fresh; review before merge.
 
 ## Method — two axes (keep separate)
 

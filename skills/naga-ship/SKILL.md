@@ -6,7 +6,7 @@ description: >
 license: MIT
 metadata:
   author: naga-codex
-  version: "1.0.0"
+  version: "1.1.0"
   domain: engineering
   tier: "A"
 ---
@@ -24,13 +24,25 @@ Agents jump straight to code. You get a pile of changes and no shared plan.
 You orchestrate; you do not imprison the user in ceremony. Skip steps that are
 already satisfied. Never invent process debt.
 
+## Plan gate (before production code)
+For non-trivial work, post a short **Implementation plan** and wait for user OK
+(or explicit "skip plan"):
+1. Files/modules touched
+2. Data/API/UI seams
+3. Test strategy (which `naga-tdd` slices)
+4. Risks / rollback
+5. Out of scope
+
+Then run `naga-verify` after each meaningful green.
+
 ## Pipeline
 1. **Align** — If goal/scope unclear → `naga-align` until exit criteria met  
 2. **Context** — If terms collide → `naga-context` (light touch)  
 3. **Slice** — Break into tracer-bullet tickets (each shippable / testable)  
 4. **Implement** — For each ticket: `naga-tdd` at the behavior seam  
-5. **Review** — `naga-review` on the accumulated diff  
-6. **Done** — Checklist below  
+5. **Verify** — `naga-verify` (L1/L2/L3) after greens  
+6. **Review** — `naga-review` on the accumulated diff  
+7. **Done** — Checklist below  
 
 ## Ticket shape
 ```markdown
@@ -45,6 +57,7 @@ already satisfied. Never invent process debt.
 - [ ] Alignment brief exists (or user waived)
 - [ ] Each ticket done or explicitly cut
 - [ ] Tests green for changed behavior
+- [ ] `naga-verify` overall is `ship` (or failures fixed)
 - [ ] Review verdict not `request-changes` (or issues fixed)
 - [ ] User-facing summary of what shipped
 

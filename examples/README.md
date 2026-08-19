@@ -4,10 +4,14 @@
 
 ```text
 1. ask-naga: "I want to add password reset to our API"
-2. naga-align → produce Alignment brief
-3. naga-ship → tickets + naga-tdd per slice
-4. naga-review → Standards + Spec verdict
+2. naga-align → Alignment brief
+3. naga-ship → plan gate → tickets + naga-tdd per slice
+4. naga-verify → L1/L2/L3 after green
+5. naga-review → Standards ∥ Spec verdict
 ```
+
+Bug path: `naga-debug` → red check → fix → `naga-verify` L1.
+
 
 ## Hermes
 
