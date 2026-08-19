@@ -17,8 +17,8 @@ Bug path: `naga-debug` → red check → fix → `naga-verify` L1.
 
 ```bash
 export SKILLS_DIR=/opt/data/skills
-./install.sh hermes
-./scripts/verify-install.sh "$SKILLS_DIR/naga-codex-eng"
+bash ./install.sh hermes
+bash ./scripts/verify-install.sh "$SKILLS_DIR/naga-codex-eng"
 ```
 
 Namespace is **`naga-codex-eng`** so it does not collide with `naga-codex` (cyber pack).

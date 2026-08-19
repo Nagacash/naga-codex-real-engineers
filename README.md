@@ -37,15 +37,32 @@ Align · Context · TDD · Dual-axis review · Ship
 git clone https://github.com/Nagacash/-Real-Engineers.git
 cd -- -Real-Engineers
 
-./install.sh claude           # ~/.claude/skills
-./install.sh project-claude   # ./.claude/skills
-./install.sh agents           # ./.agents/skills
+# Use bash explicitly (scripts may not have +x depending on clone/fs)
+bash ./install.sh claude           # ~/.claude/skills
+bash ./install.sh project-claude   # ./.claude/skills
+bash ./install.sh agents           # ./.agents/skills
 
 # Hermes (namespaced — no foreign-pack pollution)
 export SKILLS_DIR=/opt/data/skills
-./install.sh hermes
-./scripts/verify-install.sh "$SKILLS_DIR/naga-codex-eng"
+bash ./install.sh hermes
+bash ./scripts/verify-install.sh "$SKILLS_DIR/naga-codex-eng"
+# expect: OK: N Naga eng skills  (N = count of skills/ dirs; from INSTALL_MANIFEST)
+
+# Optional: enable ./install.sh without bash prefix
+# chmod +x install.sh scripts/*.sh
 ```
+
+**Notes:** `install.sh hermes` **replaces** the whole `$SKILLS_DIR/naga-codex-eng/` namespace (pack-owned — do not store other files there). Foreign-pack root guard is basename-based (`cybersecurity|omh|security|naga-codex`).
+
+
+## Install friction notes
+
+| Topic | Behavior |
+|-------|----------|
+| Exec bit | Prefer `bash ./install.sh` — Git checkouts may not preserve `+x` |
+| Verify count | Reads `expected=` / `skills=` from `INSTALL_MANIFEST.txt` (not hardcoded) |
+| Namespace wipe | Hermes install clears `naga-codex-eng/` then reinstalls — pack-owned only |
+| Foreign roots | Basename blocklist only; renamed packs can slip through |
 
 ## Pair with Cyber
 
