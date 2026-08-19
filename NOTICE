@@ -1,0 +1,13 @@
+Naga Codex Agent Engineering — Attribution
+==========================================
+
+Original Naga Codex work (MIT). Tier-A mini pack for disciplined agent engineering.
+
+Inspired by failure-mode patterns discussed in the broader agent-skills ecosystem,
+including ideas popularized in mattpocock/skills (MIT) — grilling for alignment,
+red-green-refactor loops, and separating standards review from spec review.
+
+No third-party skill bodies were copied. All SKILL.md text, Naga naming, install
+tooling, and examples are original.
+
+Naga Codex — nagacodex.cloud
